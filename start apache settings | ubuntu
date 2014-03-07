@@ -13,8 +13,10 @@
 
     ServerName site1
     DocumentRoot /home/user/www/site1/
-
+    
     sudo a2ensite site1
+    // при необходимости удаляем нунужные виртуальные хосты
+    sudo a2dissite site1
 
     sudo gedit /etc/hosts
 
